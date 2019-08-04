@@ -1,0 +1,10 @@
+[package]
+name = "actor-example"
+version = "0.0.1"
+authors = [ "fxborg" ]
+
+[dependencies]
+futures = "*"
+actix = "*"
+actix-web = "*"
+env_logger = "*"
