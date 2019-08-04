@@ -58,7 +58,7 @@ fn main() -> std::io::Result<()> {
     // log の設定
     std::env::set_var("RUST_LOG", "actix_web=info");
     env_logger::init();
-    //　アクターを開始した後、アドレスを得る
+    //　アクターのアドレスを得る
     let address = MyActor { count: 0 }.start();
     HttpServer::new( move || {
         App::new()
